@@ -1,6 +1,4 @@
-import React, { useEffect } from 'react'
-import { useDispatch, useSelector } from 'react-redux'
-import { getAllProducts } from '../store/slices/products.slice'
+import { useSelector } from 'react-redux'
 import InputSearch from './InputSearch'
 import ProductsCard from './ProductsCard'
 
@@ -10,7 +8,9 @@ const Products = () => {
 
   return (
     <div className='products'>
-      <InputSearch />
+      <div className='inputs__search'>
+        <InputSearch />
+      </div>
         {
           products?.map(product => (
             <ProductsCard 

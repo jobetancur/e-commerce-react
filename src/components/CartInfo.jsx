@@ -9,17 +9,18 @@ const CartInfo = ({productCart}) => {
         <div className='cart__card'>
             <div className='primaryInfo__cart'>
                 <p>{productCart.brand}</p>
-                <h3>{productCart.title}</h3>
+                <h4>{productCart.title}</h4>
             </div>
             <div className='secondaryInfo__cart'>
                 <p>Total:</p>
-                <h3>USD: {productCart.price * productCart.productsInCart.quantity}</h3>
+                <h4>USD: {productCart.price * productCart.productsInCart.quantity}</h4>
             </div>
             <div className='thirdInfo__cart'>
                 <p>Quantity:</p>
-                <h3>{productCart.productsInCart.quantity}</h3>
+                <h4>{productCart.productsInCart.quantity}</h4>
             </div>
-            </div>
+        </div>
+        <hr />
         <div className='trash__button'>
             <button><ion-icon name="trash-outline"></ion-icon></button>
         </div>

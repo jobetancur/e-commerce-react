@@ -28,9 +28,7 @@ const Cart = () => {
   return (
     <div className='cart'>
       <div className='confirm__purchase'>
-        <button onClick={postPurchase}>
-          Confirm Purchase
-        </button>
+        <button onClick={postPurchase}><ion-icon name="cash-outline"></ion-icon> Confirm Purchase </button>
       </div>
       <h2>My Cart</h2>
       {

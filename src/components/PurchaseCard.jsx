@@ -29,7 +29,7 @@ const PurchaseCard = ({purchase}) => {
                             {productItem.productsInCart.quantity}
                         </td>
                         <td className="purchase__price">
-                            USD {productItem.price}
+                            USD {productItem.price * productItem.productsInCart.quantity}
                         </td>
                     </tr>
                 ))

@@ -6,6 +6,7 @@ const UserLogged = () => {
 
   const onClick = () => {
     token
+    location.reload();
   }
 
   return (

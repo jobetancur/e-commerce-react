@@ -276,10 +276,11 @@
   color: white;
 }
 .login__form {
-  box-shadow: 0 0 20px #ffffff;
+  box-shadow: 0 0 10px #ff6d00;
   border-radius: 10px;
   padding: 40px;
   text-align: right;
+  margin-top: 40px;
 }
 .login__form ul li {
   list-style: none;
@@ -296,6 +297,37 @@
 .login__item input {
   padding: 5px;
   margin: 5px 0px;
+}
+.login__form button {
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background: #ff6d00;
+  cursor: pointer;
+  margin-top: 10px;
+  box-shadow: 0 0 5px #ffffff;
+  transition: 0.5s;
+}
+.login__form button:hover {
+  transform: translateY(-2px);
+}
+.logged i {
+  margin-bottom: 20px;
+  margin-left: 25px;
+  margin-top: 40px;
+}
+.logged button {
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background: #ff6d00;
+  cursor: pointer;
+  margin-top: 20px;
+  box-shadow: 0 0 5px #ffffff;
+  transition: 0.5s;
+}
+.logged button:hover {
+  transform: translateY(-2px);
 }
 
 /* Input Search */
@@ -542,9 +574,6 @@
   justify-content: center;
   flex-wrap: wrap;
 }
-.confirm__purchase {
-  width: 100%;
-}
 .cart h2 {
   width: 100%;
   color: #ffffff;
@@ -562,18 +591,72 @@
   align-items: center;
   padding: 20px;
 }
-.trash__button ion-icon {
-  font-size: 20px;
-}
 .primaryInfo__cart {
-  margin-right: 60px;
-  margin-left: 20px;
+  margin-right: 40px;
+  margin-left: 10px;
 }
 .secondaryInfo__cart {
-  margin-right: 60px;
+  margin-right: 40px;
 }
 .cart__card {
   display: flex;
+}
+.primaryInfo__cart p {
+  text-align: start;
+  margin-bottom: 5px;
+}
+.secondaryInfo__cart p {
+  text-align: start;
+  margin-bottom: 5px;
+}
+.thirdInfo__cart p {
+  text-align: start;
+  margin-bottom: 5px;
+}
+.trash__button {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.trash__button button {
+  width: 50%;
+  padding: 5px;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  background: #222327;
+  box-shadow: 0 0 5px #ff6d00;
+  transition: 0.5s;
+}
+.trash__button button:hover {
+  transform: translateY(-2px)
+}
+.trash__button ion-icon {
+  font-size: 24px;
+  color: #e23939;
+}
+.bg__cart hr {
+  border: none;
+  height: 2px;
+  background: #ff6d00;
+}
+.confirm__purchase button {
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background: #ff6d00;
+  cursor: pointer;
+  width: 180px;
+  display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  align-items: center;
+  box-shadow: 0 0 5px #ffffff;
+  transition: 0.5s;
+}
+.confirm__purchase:hover button {
+  transform: translateY(-2px)
+}
+.confirm__purchase ion-icon {
+  font-size: 24px;
+  margin-right: 10px;
 }

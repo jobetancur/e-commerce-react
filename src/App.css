@@ -141,6 +141,9 @@
   margin: 0px 15px;
   font-size: 26px;
 }
+.principal__image img {
+  width: 60%;
+}
 
 /* Product Card */
 .products {
@@ -260,6 +263,11 @@
   align-items: center;
   background: #222327;
   color: white;
+  box-shadow: 0 0 5px #ff6d00;
+  transition: 0.5s;
+}
+.details__price__button button:hover {
+  transform: translateY(-2px);
 }
 .details__price__button ion-icon{
   font-size: 20px;

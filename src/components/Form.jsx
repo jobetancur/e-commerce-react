@@ -1,6 +1,7 @@
 import axios from 'axios'
 import React, { useState } from 'react'
 import { useForm } from 'react-hook-form'
+import { useNavigate } from 'react-router-dom'
 
 const Form = () => {
 
@@ -8,13 +9,15 @@ const Form = () => {
 
     const { handleSubmit, reset, register } = useForm ()
 
+    const navigate = useNavigate()
+
   const submit = data => {
     console.log(data);
     const URL = 'https://ecommerce-api-react.herokuapp.com/api/v1/users/login'
     axios.post(URL, data)
       .then(res => {
         localStorage.setItem('token', res.data.data.token)
-        location.reload();
+        navigate('/purchases')
       })
       .catch(error => {
         localStorage.setItem('token', '')

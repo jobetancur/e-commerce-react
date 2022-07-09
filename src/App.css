@@ -280,6 +280,7 @@
   display: flex;
   justify-content: center;
   color: white;
+  margin-bottom: 120px;
 }
 .login__form {
   box-shadow: 0 0 10px #ff6d00;
@@ -316,6 +317,9 @@
 }
 .login__form button:hover {
   transform: translateY(-2px);
+}
+.logged {
+  margin-bottom: 150px;
 }
 .logged i {
   margin-bottom: 20px;

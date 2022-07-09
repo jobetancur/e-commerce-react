@@ -12,6 +12,7 @@ const InputSelect = () => {
     const navigate = useNavigate()
 
     const clickOption = () => navigate (`/category/${filterSelected}`)
+    const removeFilter = () => navigate ('/products')
 
     useEffect(() => {
         const URL = 'https://ecommerce-api-react.herokuapp.com/api/v1/products/categories'
@@ -37,12 +38,14 @@ const InputSelect = () => {
     }
 
   return (
-    <div>
+    <div className='filter__categories'>
         <Select 
             options={categories}
             onChange={handleSelectChange}
+            className='filter__categories__selector'
         />
-        <button onClick={clickOption} >Filter</button>
+        <button onClick={clickOption} ><ion-icon name="filter-outline"></ion-icon> Filter</button>
+        <button onClick={removeFilter} > Regroup</button>
     </div>
   )
 }

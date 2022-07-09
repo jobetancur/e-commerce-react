@@ -202,7 +202,6 @@
   justify-content: center;
   align-items: flex-end;
   overflow: hidden;
-  
 }
 .card .content .details {
   padding: 40px;
@@ -242,7 +241,6 @@
   width: 100%;
   display: flex;
   padding-left: 30px;
-  /* margin-bottom: 20px; */
 }
 .details__price__button {
   width: 100%;
@@ -444,13 +442,11 @@
   display: flex;
   justify-content: space-around;
 }
-
 .product__button {
   width: 100%;
   display: flex;
   justify-content: center;
   margin-top: 30px;
-  
 }
 .product__button button {
   width: 100%;
@@ -550,6 +546,7 @@
   background: #ff6d00;
 }
 
+/* Search Product */
 .search-box {
   display: flex;
   justify-content: center;
@@ -572,16 +569,49 @@
   border-radius: 10px;
   font-size: 18px;
   background: #ff6d00;
+  box-shadow: 0 0 5px #ffffff;
+  transition: 0.5s;
+}
+.search-box button:hover {
+  transform: translateY(-2px);
 }
 .inputs__search {
   width: 100%;
   display: flex;
   justify-content:center;
   flex-wrap: wrap;
+  margin-bottom: 40px;
 }
-.input__select {
-  margin-left: 20px;
+/* Select Filter */
+.filter__categories {
+  display: flex;
+  justify-content: center;
 }
+.filter__categories button {
+  padding: 10px;
+  border: none;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 14px;
+  background: #ff6d00;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 5px #ffffff;
+  transition: 0.5s;
+}
+.filter__categories__selector{
+  margin-top: 1px;
+}
+.filter__categories button ion-icon {
+  font-size: 18px;
+  margin-right: 5px;
+}
+.filter__categories button:hover {
+  transform: translateY(-2px)
+}
+
 .selector {
   width: 180px;
 }
@@ -683,4 +713,30 @@
 .total__cart {
   width: 100%;
   color: #ffffff;
+}
+.footer {
+  height: 100px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+.footer h3 {
+  width: 100%;
+  margin-top: 20px;
+}
+.footer p {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.footer hr {
+  width: 100%;
+  border: none;
+  height: 2px;
+  background: #ff6d00;
+}
+.footer ion-icon {
+  font-size: 18px;
 }

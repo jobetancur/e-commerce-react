@@ -12,6 +12,7 @@ import ProductInfo from './components/ProductInfo'
 import { useDispatch, useSelector } from 'react-redux'
 import { getAllProducts } from './store/slices/products.slice'
 import axios from 'axios'
+import Footer from './components/Footer'
 
 function App() {
 
@@ -110,11 +111,7 @@ function App() {
           </ul>
         </div>
       </nav>
-
-      {/* <Header /> */}
-      
-      {/* Routes */}
-      
+    
       <Routes>
         <Route path='/' element={ <Home /> } />
         <Route path='/products' element={ <Products /> } />
@@ -127,7 +124,9 @@ function App() {
           <Route path='/purchases' element={ <Purchases /> } />
         </Route>
       </Routes>
+      <Footer/>
     </div>
+    
   )
 }
 

@@ -119,6 +119,7 @@ function App() {
         <Route path='/' element={ <Home /> } />
         <Route path='/products' element={ <Products /> } />
         <Route path='/products/:id' element={ <ProductInfo /> } />
+        <Route path='/category/:name' element={ <Products /> } />
         <Route path='/login' element={ <Login /> } />
 
         <Route element={ <ProtectedRoutes isLogged={true} /> } >

@@ -29,6 +29,8 @@ const ProductsCard = ({product}) => {
             .catch(error => console.log(error.response.data))
     }
 
+    // console.log(product);
+
   return (
     <div className='card'>
         <div className='imgBx'>                
